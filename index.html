@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Wenz | Welcome to my page!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div class="logo">Laura Wenz</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#Über mich">Über mich</a></li>
+					<li><a href="#Erfahrungen">Erfahrungen</a></li>
+					<li><a href="#Projekte">Projekte</a></li>
+					<li><a href="#Kontakt">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Laura Wenz</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<li><a href="#Über mich" onclick="toggleMenu()">Über mich</a></li>
+					<li><a href="#Erfahrungen" onclick="toggleMenu()">Erfahrungen</a></li>
+					<li><a href="#Projekte" onclick="toggleMenu()">Projekte</a></li>
+					<li><a href="#Kontakt" onclick="toggleMenu()">Kontakt</a></li>
+				</div>
+			</div>
+		</nav>
+		<section id="hero">
+			<div class="section__pic-container">
+				<img src="./assets/Bewerbungsfoto.jpg" alt="profile picture">
+			</div>
+			<div class="section__text">
+				<p class="section__text__p1">Hi! Mein Name ist</p>
+				<h1 class="title">Laura</h1>
+				<div class="btn-container">
+					<button
+						class="btn btn-color-2"
+						onclick="window.open(/*example pdf*/)">Beispiel PDF herunterladen
+					</button>
+					<button
+						class="btn btn-color-1"
+						onclick="location.href='./#Kontakt'">Kontakt
+					</button>
+				</div>
+				<div id="socials-container">
+					<img src="./assets/linkedin.png" alt="Mein LinkedIn Profil"
+					class="icon" onclick="location.href='https://www.linkedin.com/in/laura-wenz/'">
+
+					<img src="./assets/github.png" alt="Mein Github Profil"
+					class="icon" onclick="location.href='https://github.com/Lwenz95'">
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<p class="section__text__p1">Erfahre mehr über mich</p>
+			<h1 class="title">Über mich</h1>
+			<div class="section-container">
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="details-container">
+							<img src="./assets/experience.png" alt="Erfahrungen Icon" class="icon">
+							<h3>Erfahrungen</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque, nobis accusantium fugiat necessitatibus illo mollitia earum quidem maiores autem excepturi possimus! Voluptas soluta, assumenda voluptates distinctio quidem inventore possimus?</p>
+						</div>
+						<div class="details-container">
+							<img src="./assets/education.png" alt="Bildung Icon" class="icon">
+							<h3>Bildung</h3>
+							<p>Bla bla bla<br>bla bla bla</p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus consequuntur optio in dolorum id nesciunt est tenetur expedita eum omnis reprehenderit earum maxime, nihil minus qui nulla laboriosam necessitatibus?</p>
+					</div>
+				</div>
+			</div>
+			<img src="./assets/arrow.png" alt="Pfeil Icon" class="icon arrow"
+			onclick="location.href='./#Erfahrungen'">
+		</section>
+    <script src="script.js"></script>
+	</body>
+</html>
